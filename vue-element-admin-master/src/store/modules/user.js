@@ -32,6 +32,7 @@ const user = {
         login(username, userInfo.password).then(response => {
           const data = response.data
           setToken(data.token)
+          console.log(data.token, 'token')
           commit('SET_TOKEN', data.token)
           resolve()
         }).catch(error => {

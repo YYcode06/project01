@@ -78,6 +78,7 @@ export default {
     handleLogin() {
       this.$refs.loginForm.validate(valid => {
         if (valid) {
+          console.log(valid, this.loginForm)
           this.loading = true
           this.$store.dispatch('Login', this.loginForm).then(() => {
             this.loading = false
