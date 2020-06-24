@@ -4,12 +4,14 @@
     <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       <echart ></echart>
     </el-row>
+    <selfechats></selfechats>
   </div>
 </template>
 
 <script>
 import PanelGroup from './components/panelGroup'
 import echart from './components/echart'
+import selfechats from './components/selfechats'
 const lineChartData = {
   newVisitis: {
     expectedData: [100, 120, 161, 134, 105, 160, 165],
@@ -32,7 +34,8 @@ export default {
   name: 'dashboard-admin',
   components: {
     PanelGroup,
-    echart
+    echart,
+    selfechats
   },
   data() {
     return {
