@@ -5,6 +5,9 @@
 <script>
 import echarts from 'echarts'
 export default {
+  mounted() {
+    this.initChart()
+  },
   methods: {
     initChart() {
       // 基于准备好的dom,初始化eChars实例
