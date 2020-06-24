@@ -4,6 +4,8 @@ import App              from './App'
 import router           from './router'
 import store            from './store'
 import './assets/css/index.scss'
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts
 
 Vue.config.productionTip = false
 

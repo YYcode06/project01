@@ -1,6 +1,7 @@
 <template>
-    <div id="wrapper">
+    <div id="wrapper"> 
         <my-header></my-header>
+        <echat></echat>
         <router-view class="content" v-show="!isLoading"></router-view>
         <spinner v-show="isLoading"></spinner>
         <transition name="huojian" enter-active-class="animated bounceIn" leave-active-class="animated fadeOut">
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import echat from './component/echats'
 import MyHeader         from './component/MyHeader'
 import MyFooter         from './component/MyFooter'
 import spinner          from '../share/spinner'
@@ -36,7 +38,8 @@ export default {
     components: {
         MyHeader,
         MyFooter,
-        spinner
+        spinner,
+        echat
     }
 }
 </script>

@@ -45,13 +45,15 @@ export default {
         overflow: hidden;
         min-height: 100%;
         width: 100%;
+        background: whitesmoke;
     }
     @media screen and (max-width: 440px) {
         .fire {
             display: none;
         }
         #app {
-            background: #000;
+            /* background: #000; */
+            background: pink;
         }
     }
 </style>
