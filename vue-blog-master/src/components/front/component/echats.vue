@@ -3,7 +3,11 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
+    created () {
+        this.fetchSourceData()
+    },
     mounted () {
         this.initChart()
     },
@@ -67,6 +71,12 @@ export default {
             }
       // 使用刚指定的配置项和数据显示图表
             myChart.setOption(option)
+        },
+        fetchSourceData () {
+            console.log('mock')
+            axios.get('http://localhost:8088/getResource').then((res) => {
+                console.log(res)
+            })
         }
 
     }

@@ -6,6 +6,7 @@ import store            from './store'
 import './assets/css/index.scss'
 import echarts from 'echarts'
 Vue.prototype.$echarts = echarts
+require('./mock')
 
 Vue.config.productionTip = false
 
