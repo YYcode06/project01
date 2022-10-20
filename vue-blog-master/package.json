@@ -20,7 +20,7 @@
     "jsonwebtoken": "^7.3.0",
     "marked": "^0.3.6",
     "mockjs": "^1.1.0",
-    "mongoose": "^4.9.1",
+    "mongoose": "^4.13.21",
     "nodemailer": "^4.0.0",
     "sha1": "^1.1.1",
     "smooth-scroll": "github:cferdinandi/smooth-scroll",
